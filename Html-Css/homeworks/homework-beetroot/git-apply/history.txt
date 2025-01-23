@@ -1,0 +1,30 @@
+git config user.name "Yaroslav Razdobudko"
+git config user.email "razdobudko13@gmail.com"
+cd "C:\Users\ADMIN\Desktop\front-end\Html-Css\01_lesson_first-lesson\home-work\homework_Beetroot"
+mkdir Git
+cd Git
+mkdir css
+mkdir img
+mkdir fonts
+echo. > index.html
+echo. > css\style.css
+copy "C:\Users\ADMIN\Documents\Fonts\DreiFraktur.ttf" fonts\
+copy "C:\Users\ADMIN\Documents\Fonts\Gabriola.ttf" fonts\
+copy "C:\Users\ADMIN\Documents\Fonts\georgia.ttf" fonts\
+copy "C:\Users\ADMIN\Documents\Fonts\javatext.ttf" fonts\
+copy "C:\Users\ADMIN\Documents\Fonts\klingonscript.ttf" fonts\
+copy "C:\Users\ADMIN\Pictures\image1.jpg" img\
+copy "C:\Users\ADMIN\Pictures\image2.jpg" img\
+copy "C:\Users\ADMIN\Pictures\image3.jpg" img\
+copy "C:\Users\ADMIN\Pictures\image4.jpg" img\
+copy "C:\Users\ADMIN\Pictures\image5.jpg" img\
+git init
+git add .
+git commit -m "Додав не дороблений код сайту регестрації до index.html"
+git remote add origin https://github.com/T1k-T1k/Registry-Site.git
+git push -u origin master
+git init
+git add .
+git commit -m "Додав дороблений код сайту регестрації до index.html"
+git push -u origin master
+doskey /history > "C:\Users\ADMIN\Desktop\history.txt"

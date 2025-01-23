@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо Фронтенд-Розробника</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header,
+        main,
+        footer {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        img {
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        nav ul li a:visited {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        iframe {
+            margin: 20px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+
+        a {
+            color: #3333cc;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #3333cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #skills ul li {
+            position: relative;
+            padding-left: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        #skills ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #000;
+            font-size: 1.2em;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #28272e33;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #2a2850;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="main-title">Портфоліо Фронтенд-Розробника</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#skills">Навички</a></li>
+                <li><a href="#experience">Досвід</a></li>
+                <li><a href="#resources">Ресурси</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="https://github.com/T1k-T1k" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Про мене</h2>
+            <img src="./img/photo.jpg" alt="Фото мене" style="width:200px; height:auto;">
+            <p>Привіт! Мене звати Ярослав, і я захоплений фронтенд-розробник із гострим оком на деталі та любов'ю до
+                створення красивих і функціональних веб-додатків.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навички</h2>
+            <ul>
+                <li>HTML, CSS та JavaScript</li>
+                <li>Адаптивний дизайн</li>
+                <li>React та Vue.js</li>
+                <li>Контроль версій (Git)</li>
+                <li>Сумісність із різними браузерами</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Досвід</h2>
+            <article>
+                <h3>Молодший фронтенд-розробник у WebSolutions</h3>
+                <p>Працював над створенням адаптивних вебсайтів і інтерактивних інтерфейсів для клієнтів з різних
+                    галузей.</p>
+            </article>
+            <article>
+                <h3>Фріланс-проєкти</h3>
+                <p>Розробив індивідуальні вебсайти для малого бізнесу, зосереджуючись на зручності та естетиці.</p>
+            </article>
+        </section>
+
+        <section id="resources">
+            <h2>Ресурси</h2>
+            <article>
+                <h3>Вивчайте фронтенд-розробку</h3>
+                <p>Ознайомтесь із ресурсом <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> для
+                    отримання повних уроків і викликів.</p>
+            </article>
+            <article>
+                <h3>Кращі практики фронтенду</h3>
+                <p>Відвідайте <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> для корисних порад і
+                    технік у фронтенд-розробці.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Контакти</h2>
+        <p>Email: razdobudko13@gmail.com</p>
+        <p>Телефон: +380 (66) 398 77 52</p>
+
+        <h3>Резюме</h3>
+        <iframe src="cd.html" width="600" height="400" title="Резюме"></iframe>
+
+        <h3>Відео</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </footer>
+</body>
+
+</html>
