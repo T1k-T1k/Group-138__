@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <form>
+            <h2>Форма реєстрації</h2>
+            <label for="full-name">Повне ім'я</label><br>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+            <label for="password">Пароль</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm-password">Пароль ще раз</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+            <label>Стать</label><br>
+            <input type="radio" id="male" name="gender" value="чоловіча" required>
+            <label for="male">Чоловіча</label><br>
+            <input type="radio" id="female" name="gender" value="жіноча" required>
+            <label for="female">Жіноча</label><br><br>
+
+            <label for="age">Вік</label><br>
+            <input type="number" id="age" name="age" min="14" max="46" required><br><br>
+
+            <label for="course">Курс</label><br>
+            <select id="course" name="course" required>
+                <option value="">--Виберіть курс--</option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+            </select><br><br>
+
+            <label for="address">Повна адреса</label><br>
+            <textarea id="address" name="address" rows="3" cols="45" maxlength="325px" placeholder="324 Elm Street, Apt. 56B, Springdale, Ohio, 54321, United States" required></textarea><br><br>
+
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">Я погоджуюсь з обробкою персональних даних</label><br><br>
+
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватись</button>
+        </form>
+    </div>
+</body>
+</html>

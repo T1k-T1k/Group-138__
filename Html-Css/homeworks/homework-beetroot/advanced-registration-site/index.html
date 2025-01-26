@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            display: inline-block;
+            width: 48%;
+            padding: 10px;
+            margin: 15px 5.5px 0px 0px;
+            border: none;
+            border-radius: 6.5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+
+        button[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        label[for="privacy"] {
+            font-size: 14px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Форма реєстрації</h2>
+        <label for="full-name">Повне ім'я</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Пароль ще раз</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <label>Стать</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="чоловіча" required>
+                Чоловіча
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="жіноча" required>
+                Жіноча
+            </label>
+
+        <label for="age">Вік</label>
+        <input type="number" id="age" name="age" min="14" max="46" required>
+
+        <label for="course">Курс</label>
+        <select id="course" name="course" required>
+            <option value="">--Виберіть курс--</option>
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Project Management">Project Management</option>
+            <option value="QA Manual">QA Manual</option>
+        </select>
+
+        <label for="address">Повна адреса</label>
+        <textarea id="address" name="address" rows="3" maxlength="325px" placeholder="324 Elm Street, Apt. 56B, Springdale, Ohio, 54321, United States" required></textarea>
+
+            <label for="privacy">
+                <input type="checkbox" id="privacy" name="privacy" required> Я погоджуюсь з обробкою персональних даних
+            </label>
+
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватись</button>
+    </form>
+</body>
+</html>
