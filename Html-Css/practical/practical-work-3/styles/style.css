@@ -1,0 +1,21 @@
+body {
+    background-color: darkgrey;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-main {
+    color: #500CFD;
+}
+
+.h2-main {
+    color: #FF001A;
+}
+
+.h3-main {
+    color: #0CFD18;
+}

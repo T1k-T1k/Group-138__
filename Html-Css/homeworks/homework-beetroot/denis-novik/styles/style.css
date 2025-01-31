@@ -39,19 +39,35 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Отступы между элементами */
+    margin: 0 20px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: #444; /* Цвет текста */
+    text-decoration: none;
+    color: #444;
     font-size: 17px;
     font-weight: lighter;
     padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    color: #444; /* Цвет при наведении */
+    color: #444;
+}
+
+.header__title {
+    font-weight: bold;
+}
+
+.header__title:hover {
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: bold
+}
+
+h2:hover {
+    font-weight: 200;
 }
 
 .header {
@@ -91,9 +107,22 @@ nav ul li a:hover {
     text-align: center;
     color: #000;
     overflow-wrap: break-word;
-    max-width: 400px;
+    max-width: 415px;
+    font-weight: 400;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+.smooth1:hover {
+    font-weight: 550;
+}
+
+.smooth2:hover {
+    font-weight: 550;
+}
+
+.smooth3:hover {
+    font-weight: 550;
 }
 
 
@@ -102,7 +131,8 @@ nav ul li a:hover {
     background: #fff;
 }
 
-.skills .container h2, p {
+.skills .container h2,
+p {
     display: flex;
     justify-content: center;
 }
@@ -138,6 +168,11 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     margin: 45px;
+    font-weight: 200;
+}
+
+.portfolio__item p:hover {
+    font-weight: bold;
 }
 
 .portfolio .container h2 {
@@ -153,11 +188,19 @@ nav ul li a:hover {
 }
 
 .contacts__links {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     margin-top: 10px;
+}
+
+.footer-information {
+    font-weight: 200;
+}
+
+.footer-information:hover {
+    font-weight: bold;
 }
 
 .send {
@@ -170,7 +213,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -183,6 +226,11 @@ nav ul li a:hover {
     margin: 0 auto;
     margin-top: 40px;
     text-align: center;
+    font-weight: 200;
+}
+
+.sub_text:hover {
+    font-weight: bold;
 }
 
 .send:hover {
@@ -195,19 +243,22 @@ nav ul li a:hover {
 }
 
 .contacts__links a {
-    display: inline-block; 
-    text-decoration: none; 
+    display: inline-block;
+    text-decoration: none;
 }
 
 .contacts__links img {
     width: 40px;
     height: 40px;
-    transition: transform 0.2s ease; 
+    transition: transform 0.2s ease;
 }
 
 .contacts__links img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    opacity: 0.8;
 }
+
+.about {}
 
 ::-webkit-scrollbar {
     width: 6px;
