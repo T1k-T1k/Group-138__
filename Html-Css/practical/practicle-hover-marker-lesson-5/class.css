@@ -1,0 +1,39 @@
+.btn {
+    padding: 5px 10px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(245, 81, 17);
+    color: black;
+}
+
+.btn:active {
+    color: black;
+    background-color: aqua;
+}
+
+.list__item:nth-child(odd) {
+    background-color: aqua;
+    max-width: 300px;
+}
+
+.title::after {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: brown;
+    margin-left: 21.5px;
+    transition: all 0.4s ease;
+}
+
+.title:hover::after {
+    width: 75px;
+}

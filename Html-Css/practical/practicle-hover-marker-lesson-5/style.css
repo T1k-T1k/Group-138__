@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title::before {
+    content: "🌹";
+}
+
+.title::after {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: brown;
+    margin-left: 21.5px;
+    transition: all 0.4s;
+}

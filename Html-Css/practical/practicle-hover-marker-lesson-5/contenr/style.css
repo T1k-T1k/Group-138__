@@ -1,0 +1,25 @@
+.form1 {
+    background-color: magenta;
+    border: 100px solid blue;
+    max-width: 250px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.form2 {
+    background-color: magenta;
+    border: 100px solid red;
+    max-width: 250px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.form3 {
+    background-color: magenta;
+    border: 100px solid grey;
+    max-width: 250px;
+    text-align: center;
+    padding: 50px;
+}
