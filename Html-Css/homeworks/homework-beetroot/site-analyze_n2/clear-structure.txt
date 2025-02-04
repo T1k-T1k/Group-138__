@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+        <title>Website Structure</title>
+    </head>
+
+    <body>
+
+        <!-- Header Information -->
+        <header>
+            <div>
+                <img src="images/logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div>
+                <h3>.../h3>
+                <p>...</p>
+                <a href="#" class="button">...</a>
+                <a href="#" class="link">...</a>
+                <img src="images/hero-img.png" alt="">
+            </div>
+        </section>
+
+        <!-- Features Information -->
+        <main>
+            <section>
+                <div>
+                    <h2></h2>
+                    <article>
+                        <img src="images/icon1.png" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                    <article>
+                        <img src="images/icon2.png" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                    <article>
+                        <img src="images/icon3.png" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                    <article>
+                        <img src="images/icon4.png" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Audiences Information -->
+            <section>
+                    <article>
+                        <div>
+                            <h3>...<strong>...</strong></h3><p>...</p>
+                            <ul>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="images/design-professional.png" alt="">
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>...<strong>...</strong></h3><p>...</p>
+                            <ul>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="images/product-manager.png" alt="">
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>...<strong>...</strong></h3><p>...</p>
+                            <ul>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                                <li>
+                                    <img src="images/checkmark.png" alt="">
+                                    <h4>...</h4><p>...</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="images/marketer.png" alt="">
+                    </article>
+            </section>
+        </main>
+
+        <!-- Footer information -->
+        <footer>
+            <div>
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <form>
+                        <input type="email" name="email" placeholder="">
+                        <button></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    </html>

@@ -1,0 +1,412 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #fff;
+    padding: 14.41px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo img {
+    margin-left: 80px;
+    max-height: 32px;
+    max-width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #2F281E;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF9900;
+}
+
+.button.sign-up {
+    margin-right: 100px;
+}
+
+.button.sign-in {
+    padding: 13px 26px;
+    border-radius: 5px;
+    color: #2F281E;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.sign-in:hover {
+    background-color: #FF9900;
+    border-color: #FF9900;
+    color: #FFFFFF;
+}
+
+.button.sign-up {
+    padding: 13px 26px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: #FF9900;
+    border: 1px solid #FF9900;
+}
+
+.button.sign-up:active {
+    background-color: #e98d03;
+}
+
+.button.sign-in:active {
+    background-color: #e98d03;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.hero h1 {
+    font-family: Montserrat;
+    line-height: normal;
+    max-width: 485px;
+    font-size: 44px;
+    margin-bottom: 30px;
+    line-height: 54px;
+}
+
+.hero p {
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #544837;
+    max-width: 500px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.hero .button {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #FF9900;
+    font-family: Poppins;
+    letter-spacing: 0.55px;
+    font-weight: 700;
+    color: white;
+    padding: 13px 43.5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .button:active {
+    background: #e98d03;
+}
+
+.hero .link {
+    color: #FF9900;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero img {
+    margin-right: 100px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    background: #fff;
+}
+
+.features h2 {
+    margin: auto;
+    font-family: Montserrat;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 43.88px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-list article {
+    text-align: left;
+}
+
+.feature-list article img {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.feature-list article h3 {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.82px;
+}
+
+.feature-list article p {
+    position: relative;
+    z-index: 1;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #544837;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 300px;
+    margin-bottom: 83px;
+}
+
+.features .button {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin: auto;
+    margin-bottom: 100px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    text-decoration: none;
+    background-color: #FF9900;
+    color: #FFFFFF;
+    padding: 13px 39.5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.features .button:active {
+    background-color: #e98d03;
+}
+
+.features::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    transform: translateY(var(--curve-position, 520px));
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="389" viewBox="0 0 1440 389" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M692.343 389.007C207.836 389.599 -277.924 116.689 -420.323 29.7707C-432.976 22.0475 -427.421 3.47955 -412.597 3.46143L1811.81 0.742401C1826.67 0.724213 1832.24 19.352 1819.53 27.0604C1675.59 114.359 1184.59 388.405 692.343 389.007Z" fill="url(%23paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="1819.9" y1="387.699" x2="1819.44" y2="-0.556422" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFE5D2" stop-opacity="0.63"/><stop offset="1" stop-color="%23FFF4E5" stop-opacity="0.01"/></linearGradient></defs></svg>') no-repeat center bottom / cover;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Audience Section */
+
+.audiences {
+    padding: 100px;
+}
+
+.audience {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.audience img {
+    height: auto;
+    max-width: 100%;
+}
+
+.audience .content {
+    max-width: 60%;
+    margin-left: 20px;
+}
+
+.audience h3 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat;
+    line-height: 26px;
+    color: #544837;
+}
+
+.audience strong {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    color: #2F281E;
+}
+
+.audience p {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #544837;
+    max-width: 450px;
+}
+
+.audience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.audience ul li h4 {
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.audience ul li p {
+    font-family: Montserrat;
+    color: #544837;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.checkmarks__li p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.professional {
+    margin-left: 600px;
+}
+
+.manager {
+    margin-right: 400px;
+}
+
+/* Footer */
+
+.site-footer {
+    padding: 20px 50px;
+    border-top: 1px solid #BCD0E57F;
+    font-family: Montserrat;
+}
+
+.site-footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer .footer-container h4 {
+    color: #2F281E;
+}
+
+.footer-logo img {
+    max-height: 50px;
+    margin-bottom: 120px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #544837;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #FF9900;
+}
+
+.footer-sign-up form {
+    display: flex;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+.footer-sign-up input {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: 1px solid #BCD0E5;
+    margin-bottom: 25px;
+}
+
+.footer-sign-up h4 {
+    max-width: 225px;
+}
+
+input::placeholder {
+    color: #BCD0E5;
+    font-size: 14.5px;
+}
+
+.footer-sign-up button {
+    background: #FF9900;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: Poppins;
+    border: none;
+    padding: 13px 39.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer-sign-up button:active {
+    background: #e98d03;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #939393;
+    border-radius: 8px;
+}
