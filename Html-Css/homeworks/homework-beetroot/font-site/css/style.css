@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'PT Sans', sans-serif;
+    --heading-font: 'Francois One', sans-serif;
+    --chapter-font: 'Farro', sans-serif;
+    --change-lang-font: 'Tourney', sans-serif;
+    --text-color: #000;
+    --code-bg-color: #DADADA;
+    --main-line-height: 1.7;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: var(--main-line-height);
+    padding: 0 15px;
+}
+
+/* Header styles */
+.header {
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__lang--change {
+    font-family: var(--change-lang-font);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: var(--text-color);
+    font-family: var(--heading-font);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.main-logo {
+    margin-left: auto;
+}
+
+.main-logo img {
+    height: 30px;
+}
+
+.section {
+    margin-bottom: 70px;
+}
+
+.section__title {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.section__text {
+    margin-bottom: 30px;
+}
+
+.list {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.list__item {
+    margin-bottom: 15px;
+}
+
+.code {
+    background-color: var(--code-bg-color);
+    padding: 2px 6px;
+    font-family: monospace;
+}
+
+.section__link {
+    color: var(--text-color);
+}
+
+.main-logo img {
+    height: 30px;
+}
+
+/* Вирівнювання Chapter */
+
+.chapter {
+    display: inline-block;
+    font-family: var(--chapter-font);
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.code {
+    font-family: var(--main-font);
+    background-color: var(--code-bg-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
