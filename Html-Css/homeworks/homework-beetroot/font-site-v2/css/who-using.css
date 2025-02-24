@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 16px;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__lang--change {
+    font-family: 'Tourney';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    font-family: 'Staatliches';
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-logo {
+    height: 40px;
+}
+
+.main-logo img {
+    height: 100%;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 120px;
+    text-align: left;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    margin-top: 15px;
+    margin-left: -120px;
+    background-color: #000;
+}
+
+.separator {
+    height: 1px;
+    background-color: #BFBFBF;
+    margin: 20px 0;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.brand-box {
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.4s ease;
+}
+
+.brand-logo-hover {
+    position: absolute;
+    max-width: 80%;
+    max-height: 60px;
+    transition: opacity 0.4s ease;
+}
+
+.brand-logo {
+    opacity: 1;
+}
+
+.brand-logo-hover {
+    opacity: 0;
+}
+
+.brand-box:hover .brand-logo {
+    opacity: 0;
+}
+
+.brand-box:hover .brand-logo-hover {
+    opacity: 1;
+}
+
+.brand-box:hover {
+    background-color: #1A1A1A;
+}
+
+.brand-logo,
+.brand-logo-hover {
+    max-height: 110px;
+}

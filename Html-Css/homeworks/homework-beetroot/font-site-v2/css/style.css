@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+nav {
+    padding: 16px;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__lang--change {
+    font-family: 'Tourney';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    font-family: 'Staatliches';
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-logo {
+    height: 40px;
+}
+
+.main-logo img {
+    height: 100%;
+}
+
+/* Main Content Styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar Styles */
+
+.sticky-container {
+    height: 100vh;
+}
+
+.sidebar {
+    position: sticky;
+    top: 10px;
+    width: 250px;
+    padding: 24px;
+}
+
+.sidebar li {
+    margin: 25px 0;
+    font-family: 'Francois One';
+    font-weight: 500;
+    font-size: 21px;
+    border-bottom: 1px solid #BDBDBD;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 32px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.sticky-bg-container {
+    position: sticky;
+    top: 5px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.sticky-bg-container img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.chapter {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.section__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    font-family: 'Francois One', sans-serif;
+    position: relative;
+}
+
+.section__title::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    transition: width 0.4s ease;
+}
+
+.section__title:hover::after {
+    width: 75px;
+}
+
+.section__text {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section__link {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.list {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.list__item {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.code {
+    font-family: monospace;
+    background-color: #DADADA;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}

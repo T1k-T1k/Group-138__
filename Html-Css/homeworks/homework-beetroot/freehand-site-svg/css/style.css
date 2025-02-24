@@ -1,0 +1,187 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+body {
+    color: #1a1a1a;
+}
+
+/* Header */
+.header {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.content-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-icon {
+    color: #32B768;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Main content */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.services {
+    margin-bottom: 50px;
+}
+
+.services__subtitle {
+    color: #64748B;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.services__title {
+    font-family: "Nunito Sans";
+    font-size: 32px;
+    color: #1E293B;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.services__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #3DB370;
+}
+
+.service-card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid #1565D81A;
+    max-width: 64px;
+    height: 64px;
+}
+
+.service-card__icon img {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-card__icon .icon-hover {
+    opacity: 0;
+}
+
+.service-card__icon:hover .icon-default {
+    opacity: 0;
+}
+
+.service-card__icon:hover .icon-hover {
+    opacity: 1;
+}
+
+.service-card__title {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+}
+
+.service-card__text {
+    color: #64748B;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.service-card__link {
+    font-weight: 600;
+    color: #3DB370;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.service-card__link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #1E293B;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer__logo-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.footer__logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #EFEEF3;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-icon img {
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(20%) saturate(1170%) hue-rotate(93deg) brightness(97%) contrast(93%);
+    /* #3DB370 */
+}
