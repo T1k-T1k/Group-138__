@@ -1,0 +1,16 @@
+{
+  "name": "prepare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass -w  scss/main.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}
